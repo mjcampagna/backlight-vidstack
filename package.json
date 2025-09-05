@@ -1,0 +1,27 @@
+{
+	"name": "vidstack-selfhost",
+	"version": "1.0.0",
+	"main": "index.js",
+	"scripts": {
+		"build": "rollup -c",
+		"start": "serve -l 3000",
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"watch": "rollup -c -w"
+	},
+	"keywords": [],
+	"author": "Matt",
+	"license": "ISC",
+	"description": "",
+	"type": "module",
+	"dependencies": {
+		"vidstack": "^1.12.13"
+	},
+	"devDependencies": {
+		"@rollup/plugin-commonjs": "^28.0.6",
+		"@rollup/plugin-node-resolve": "^16.0.1",
+		"@rollup/plugin-terser": "^0.4.4",
+		"rollup": "^4.49.0",
+		"rollup-plugin-css-only": "^4.5.2",
+		"serve": "^14.2.4"
+	}
+}
