@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+	<title>Vidstack Self-Hosted</title>
+
+	<!-- Vidstack default theme + both layouts -->
+	<link rel="stylesheet" href="/dist/vidstack.css" />
+</head>
+
+<body style="max-width: 900px; margin: 2rem auto; font-family: system-ui;">
+	<h1>Vidstack Web Components (Self-hosted)</h1>
+
+	<!-- Load your self-hosted bundle -->
+	<script type="module" src="/dist/vidstack.bundle.js"></script>
+
+	<!-- YouTube -->
+	<media-player src="https://www.youtube.com/watch?v=nD1f1Ian0kA">
+		<media-provider>
+			<media-poster class="vds-poster"></media-poster>
+		</media-provider>
+		<media-video-layout></media-video-layout>
+		<media-audio-layout></media-audio-layout>
+	</media-player>
+
+	<!-- Vimeo -->
+	<media-player src="https://vimeo.com/394381644">
+		<media-provider>
+			<media-poster class="vds-poster"></media-poster>
+		</media-provider>
+		<media-video-layout></media-video-layout>
+		<media-audio-layout></media-audio-layout>
+	</media-player>
+
+	<!-- VIDEO example -->
+	<media-player title="Sample Video" src="/public/media/DAOKO×MIYAVI.mp4" playsinline crossorigin style="margin-bottom: 32px;">
+		<media-provider></media-provider>
+		<media-video-layout></media-video-layout>
+		<media-audio-layout></media-audio-layout>
+	</media-player>
+
+	<!-- AUDIO example -->
+	<media-player title="Sample Audio" src="https://www.learningcontainer.com/wp-content/uploads/2020/02/Kalimba.mp3" preload="metadata">
+		<media-provider></media-provider>
+		<media-video-layout></media-video-layout>
+		<media-audio-layout></media-audio-layout>
+	</media-player>
+</body>
+
+</html>
